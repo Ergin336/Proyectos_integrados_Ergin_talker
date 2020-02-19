@@ -9,8 +9,8 @@ def talker():
     rate = rospy.Rate(10) # 10hz 
     counter = 0
     while not rospy.is_shutdown():
-        hello_str=int(input("Escribe valor entero: "))
-        counter=counter+1 
+        hello_str = (input("Escribe un valor entero: "))
+        #counter=counter+1 
         rospy.loginfo(hello_str) 
         pub.publish(hello_str) 
         rate.sleep()
