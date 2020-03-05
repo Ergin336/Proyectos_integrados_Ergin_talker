@@ -20,5 +20,5 @@ if __name__ == '__main__':
     try:
         publicador_ros()
 
-    except rospy.ROSInterruptorException:
+    except:
         pass
